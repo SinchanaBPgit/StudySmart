@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Your CSS styles for the dashboard */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://th.bing.com/th/id/OIP.4WLHwXWqflMtzOR4sxYJ-AHaEH?w=307&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7'); /* Background image link */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .dashboard-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px; /* Adjust width as needed */
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%; /* Take entire width */
+        }
+
+        .testimonial {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: calc(100% - 220px); /* Take entire width except sidebar */
+        }
+
+        .testimonial h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .student-name {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h1>Dashboard</h1>
+            <ul class="menu">
+                <li>
+                    <a href="courses.html" >Courses</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="testimonial-container">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial">
+            <p>I read well in the StudySmart</p>
+            <p class="student-name">-John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>I enjoyed learning with StudySmart</p>
+            <p class="student-name">-Jane Smith</p>
+        </div>
+        <div class="testimonial">
+            <p>StudySmart helped me improve my skills</p>
+            <p class="student-name">-Alice Johnson</p>
+        </div>
+    </div>
+</body>
+</html>
