@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-e-commerce-learning-education-business-poster-banner-image_123753.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <a href="tel:123456789"><i class="fas fa-phone"></i> +91 7349011425</a>
+            <a href="mailto:info@example.com"><i class="fas fa-envelope"></i> studysmart@gmail.com</a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> https://l1nk.dev/tzBxx</a>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                <label for="course">Course Name:</label>
+                <input type="text" id="course" name="course" placeholder="Enter a course name">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script>
+        // Handle form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                // You can add your form submission logic here, such as sending an AJAX request
+                // After successful submission, reset the form
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
