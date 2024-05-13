@@ -61,6 +61,10 @@ def logout():
     session.clear()
     return redirect(url_for('login'))
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 
 @app.route('/enroll.html')
 def enroll():
