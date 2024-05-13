@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySmart - Home</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome library -->
+    <style>
+        /* Additional CSS styles for dropdown menu and buttons */
+        .heading{
+            color: white;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .main-container {
+
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+        }
+        /* Button styles */
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block; /* Display as inline-block element */
+
+            font-size: 16px;
+            margin: 10px; /* Add vertical margin */
+            cursor: pointer;
+            border-radius: 8px;
+            width: 150px; /* Set width of buttons */
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Background image */
+        body {
+            background-image: url('https://th.bing.com/th?id=OIP.NevmrTX5YgrBQ1R3U7UqvwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2'); /* Specify path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="heading">Welcome to StudySmart!</h1>
+
+        <div class="button-container">
+        <!-- Login button -->
+        <a href="/login" class="button">Login</a>
+        <!-- Register button -->
+        <a href="/register" class="button">Register</a>
+        </div>
+    </div>
+
+</body>
+</html>
